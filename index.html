@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tutorial Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>TensaiDevs - Graphics Course</h1>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </header>
+
+        <!-- Progress Section -->
+        <div class="progress-section">
+            <div class="progress-info">
+                <span class="progress-text">Your Progress</span>
+                <span class="progress-percentage" id="progress-percentage">0%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="progress-stats">
+                <span id="videos-watched">0</span> of <span id="total-videos">0</span> videos completed
+            </div>
+        </div>
+
+        <!-- Video Grid -->
+        <div class="video-grid" id="video-grid">
+            <!-- Videos will be dynamically inserted here -->
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="pagination" id="pagination">
+            <button id="prev-btn" class="pagination-btn" disabled>← Previous</button>
+            <div class="page-numbers" id="page-numbers">
+                <!-- Page numbers will be dynamically inserted here -->
+            </div>
+            <button id="next-btn" class="pagination-btn">Next →</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
